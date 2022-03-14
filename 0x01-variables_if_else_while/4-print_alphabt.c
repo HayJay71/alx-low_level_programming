@@ -9,7 +9,8 @@ int main(void)
 {
 	char sml;
 
-	for (sml = 'a'; sml <= 'z'; sml++){
+	for (sml = 'a'; sml <= 'z'; sml++)
+	{
 		if (sml == 'e' || sml == 'q')
 			continue;
 		else
