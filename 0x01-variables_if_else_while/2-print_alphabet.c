@@ -8,6 +8,7 @@
 int main(void)
 {
 	char sml;
+
 	for (sml = 'a'; sml <= 'z'; sml++)
 		putchar(sml);
 	putchar('\n');
