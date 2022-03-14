@@ -14,12 +14,12 @@ int main(void)
 		if (num < '9')
 		{
 			putchar(num);
-			putchar(','+' ');
+			putchar(", ");
 		}
 		else
 		{
 			putchar(num);
-			putchar(' ');
+			putchar(" ");
 		}
 	}
 	return (0);
