@@ -10,7 +10,12 @@ int main(void)
 	int hex;
 
 	for (hex = '0'; hex <= 'f'; hex++)
-		putchar(hex);
+	{
+		if (hex > '9' && hex < 'a')
+			continue;
+		else
+			putchar(hex);
+	}
 	putchar('\n');
 	return (0);
 }
