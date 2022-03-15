@@ -20,11 +20,11 @@ int main(void)
 					putchar(n);
 					putchar(u);
 					putchar(m);
-				}
-				if (n != '7' || u != '8')
-				{
-					putchar(',');
-					putchar(' ');
+					if (n != '7' || u != '8' || m != '9')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
