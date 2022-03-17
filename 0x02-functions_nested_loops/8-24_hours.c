@@ -8,7 +8,7 @@
 
 void jack_bauer(void)
 {
-	int hours_tens, hours_unit, minutes_tens, minutes_unit;
+	int hours_tens, hours_unit, minutes_tens, minutes_unit, hours_unit_max;
   
 	hours_tens = '0';
 	while (hours_tens < '3')
