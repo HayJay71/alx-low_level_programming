@@ -37,6 +37,6 @@ void jack_bauer(void)
 			hours_unit++;
 		}
 		hours_unit = '0';
-		hours_tens++
+		hours_tens++;
 	}
 }
