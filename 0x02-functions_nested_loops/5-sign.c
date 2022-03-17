@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_sign - Entry point
  * @n: carrier variable
  * Description: prints the sign of a number
