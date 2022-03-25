@@ -32,20 +32,20 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			b = n2[j--] - 48;
 		else
 			b = 0;
-			r[k] = (a + b + c) % 10 + 48;
-			c = (a + b + c) / 10;
-			if (k >= (size_r - 2))
-				return (0);
+		r[k] = (a + b + c) % 10 + 48;
+		c = (a + b + c) / 10;
+		if (k >= (size_r - 2))
+			return (0);
 	}
 	if (c > 0)
 		r[k++] = c + 48;
-		r[k] = '\0';
-		for (i = 0; i < (k / 2); i++)
-		{
-			t = r[i];
-			r[i] = r[k - i - 1];
-			r[k - i - 1] = t;
-		}
+	r[k] = '\0';
+	for (i = 0; i < (k / 2); i++)
+	{
+		t = r[i];
+		r[i] = r[k - i - 1];
+		r[k - i - 1] = t;
+	}
 
 	return (r);
 }
