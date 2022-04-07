@@ -33,7 +33,7 @@ int **alloc_grid(int width, int height)
 		if (gridout[i] == NULL)
 		{
 			for (j = 0; j <= i; j++)
-				free(gridout[i]);
+				free(gridout[j]);
 			free(gridout);
 			return (NULL);
 		}
