@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
+	unsigned long *mul;
 	int i, j;
 
 	if (argc != 3)
@@ -33,8 +33,10 @@ int main(int argc, char *argv[])
 
 	}
 
-	mul = atol(argv[1]) *atol(argv[2]);
-	printf("%lu\n", mul);
+	mul = malloc(sizeof(*mul));
+	mul[0] = atol(argv[1]) *atol(argv[2]);
+	printf("%lu\n", mul[0]);
+	free(mul);
 
 	return (0);
 }
