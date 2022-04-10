@@ -3,6 +3,30 @@
 #include <stdlib.h>
 
 /**
+ * print_int - prints an integer.
+ * @n: int
+ * Return: 0
+ */
+
+void print_int(unsigned long n)
+{
+	unsigned long divisor = 1, resp;
+
+	while (n / divisor > 9)
+	{
+		divisor *= 10;
+	}
+
+	while (divisor >= 1)
+	{
+		resp = n / divisor;
+		putchar(resp + '0');
+		n %= divisor;
+		divisor /= 10;
+	}
+}
+
+/**
  * main - multiplies two positive numbers
  * @argc: n arguments
  * @argv: args
@@ -11,7 +35,6 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
 	int i, j;
 
 	if (argc != 3)
@@ -33,8 +56,8 @@ int main(int argc, char *argv[])
 
 	}
 
-	mul = atol(argv[1]) *atol(argv[2]);
-	printf("%lu\n", mul);
+	print_int(atol(argv[1]) * atol(argv[2]));
+	putchar('\n');
 
 	return (0);
 }
