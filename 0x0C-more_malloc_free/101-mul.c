@@ -48,7 +48,7 @@ void print_int(unsigned long n)
 	while (divisor >= 1)
 	{
 		resp = n / divisor;
-		putchar(resp + '0');
+		_putchar(resp + '0');
 		n %= divisor;
 		divisor /= 10;
 	}
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 	}
 
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
