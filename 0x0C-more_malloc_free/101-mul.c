@@ -36,9 +36,9 @@ int _atoi(const char *s)
  * Return: 0
  */
 
-void print_int(unsigned long n)
+void print_int(unsigned long int n)
 {
-	unsigned long divisor = 1, resp;
+	unsigned long int divisor = 1, resp;
 
 	while (n / divisor > 9)
 	{
